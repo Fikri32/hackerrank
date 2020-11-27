@@ -1,0 +1,14 @@
+ALGORITMA ALTERNATE_STRING
+{TERSEDIA KARAKTER DALAM BENTUK ARRAY.CARILAH BERAPA JUMLAH KARAKTER YANG BERSEBELAHAN DAN SAMA UNTUK DI HAPUS}
+DEKLARASI :
+s = AAABBBABABABABABABAAAABBB 
+hitung = 0
+panjang = strln(s)
+pisah   = str_split(s)
+i     = integer
+ALGORITMA : 
+  for (i <- 0; i<panjang;i++) 
+  if(pisah[i] == pisah[i + 1])
+  hitung <- hitung + 1
+  write(hitung)
+
